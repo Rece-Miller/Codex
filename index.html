@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <p class="eyebrow">Arcade Classic</p>
+      <h1>Snake</h1>
+      <div class="stats">
+        <div class="stat">
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+          <span class="label">Best</span>
+          <strong id="best-score">0</strong>
+        </div>
+      </div>
+      <p class="instructions">Use the arrow keys or WASD to move. Press space to pause and enter to restart after game over.</p>
+      <button id="restart-button" type="button">Restart Game</button>
+    </section>
+
+    <section class="game-shell" aria-label="Snake game">
+      <canvas id="game" width="400" height="400"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">Press Any Arrow Key</h2>
+        <p id="overlay-text">Guide the snake, eat the food, and avoid the walls or yourself.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
