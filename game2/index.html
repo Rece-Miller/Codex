@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Tetris</title>
+  <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+  <main class='layout'>
+    <section class='panel game-panel'>
+      <div class='panel-header'>
+        <div>
+          <h1>Neon Tetris</h1>
+          <p>Clear lines, build combos, and keep the stack alive.</p>
+        </div>
+        <button id='restart' type='button'>Restart</button>
+      </div>
+      <canvas id='board' width='300' height='600' aria-label='Tetris board'></canvas>
+      <p id='message' class='message'>Press any arrow key or space to begin.</p>
+    </section>
+
+    <aside class='panel sidebar'>
+      <div class='stat-card'>
+        <span class='label'>Score</span>
+        <strong id='score'>0</strong>
+      </div>
+      <div class='stat-card'>
+        <span class='label'>Lines</span>
+        <strong id='lines'>0</strong>
+      </div>
+      <div class='stat-card'>
+        <span class='label'>Level</span>
+        <strong id='level'>1</strong>
+      </div>
+
+      <div class='preview-wrap'>
+        <span class='label'>Next</span>
+        <canvas id='next' width='160' height='160' aria-label='Next piece preview'></canvas>
+      </div>
+
+      <div class='controls'>
+        <span class='label'>Controls</span>
+        <p><kbd>&larr;</kbd> <kbd>&rarr;</kbd> or <kbd>A</kbd> <kbd>D</kbd> Move</p>
+        <p><kbd>&darr;</kbd> or <kbd>S</kbd> Soft drop</p>
+        <p><kbd>&uarr;</kbd> or <kbd>W</kbd> Rotate</p>
+        <p><kbd>Space</kbd> Hard drop</p>
+        <p><kbd>P</kbd> Pause</p>
+      </div>
+    </aside>
+  </main>
+
+  <script type='module' src='./main.js'></script>
+</body>
+</html>
