@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Codex</title>
+  <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+  <div class='bg-orb orb-a'></div>
+  <div class='bg-orb orb-b'></div>
+
+  <header class='site-header'>
+    <a class='brand' href='./index.html' aria-label='Codex home'>
+      <svg class='brand-mark' viewBox='0 0 96 96' role='img' aria-label='Codex logo'>
+        <defs>
+          <linearGradient id='codexGradient' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#7cf7d4'></stop>
+            <stop offset='55%' stop-color='#6fb7ff'></stop>
+            <stop offset='100%' stop-color='#ffe083'></stop>
+          </linearGradient>
+        </defs>
+        <path d='M48 8 80 24v48L48 88 16 72V24Z' fill='none' stroke='url(#codexGradient)' stroke-width='6' stroke-linejoin='round'></path>
+        <path d='M34 36c4-8 24-8 28 0' fill='none' stroke='url(#codexGradient)' stroke-width='6' stroke-linecap='round'></path>
+        <path d='M34 60c4 8 24 8 28 0' fill='none' stroke='url(#codexGradient)' stroke-width='6' stroke-linecap='round'></path>
+        <path d='M32 48h32' fill='none' stroke='url(#codexGradient)' stroke-width='6' stroke-linecap='round'></path>
+      </svg>
+      <span>Codex</span>
+    </a>
+    <nav class='nav-links'>
+      <a href='#demos'>Demos</a>
+      <a href='./game1/index.html'>Game 1</a>
+      <a href='./game2/index.html'>Game 2</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class='hero'>
+      <div class='hero-copy'>
+        <p class='eyebrow'>Interactive Experiments</p>
+        <h1>Codex is your playground for fast prototypes, game ideas, and polished browser demos.</h1>
+        <p class='hero-text'>This home screen is the launchpad for the two playable projects in this workspace: a first-person platformer and a neon-styled Tetris build. Clean, direct, and ready to expand.</p>
+        <div class='hero-actions'>
+          <a class='button primary' href='#demos'>Open Demos</a>
+          <a class='button secondary' href='./game1/index.html'>Launch Parkour</a>
+        </div>
+      </div>
+
+      <section class='hero-panel' aria-label='Codex summary'>
+        <div class='panel-grid'>
+          <article>
+            <span class='panel-label'>Workspace</span>
+            <strong>Codex</strong>
+            <p>Root hub for experiments, demos, and UI prototypes.</p>
+          </article>
+          <article>
+            <span class='panel-label'>Available</span>
+            <strong>2 Browser Games</strong>
+            <p>Playable straight from this landing page.</p>
+          </article>
+          <article>
+            <span class='panel-label'>Style</span>
+            <strong>Bright, Clear, Intentional</strong>
+            <p>A branded front door instead of a blank directory listing.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class='demos' id='demos'>
+      <div class='section-head'>
+        <p class='eyebrow'>Playable Demos</p>
+        <h2>Choose where to jump in.</h2>
+      </div>
+
+      <div class='card-grid'>
+        <article class='demo-card'>
+          <div class='demo-icon sky'>01</div>
+          <h3>Skyplate Run</h3>
+          <p>A first-person 3D platformer with checkpoints, moving platforms, jump pads, and a summit goal.</p>
+          <ul class='feature-list'>
+            <li>First-person camera</li>
+            <li>Parkour route with collectibles</li>
+            <li>Playable browser prototype</li>
+          </ul>
+          <a class='card-link' href='./game1/index.html'>Open Game 1</a>
+        </article>
+
+        <article class='demo-card'>
+          <div class='demo-icon neon'>02</div>
+          <h3>Neon Tetris</h3>
+          <p>A polished arcade-style Tetris page with score, levels, next-piece preview, and keyboard controls.</p>
+          <ul class='feature-list'>
+            <li>Arrow keys and WASD</li>
+            <li>Next-piece preview and ghost piece</li>
+            <li>Pause and restart support</li>
+          </ul>
+          <a class='card-link' href='./game2/index.html'>Open Game 2</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
